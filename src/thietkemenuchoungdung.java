@@ -1,8 +1,9 @@
 import java.util.Scanner;
 public class thietkemenuchoungdung {
     public static void main(String[] args) {
-        int choice;
+        int choice=-1;
         Scanner input = new Scanner(System.in);
+        while(choice!= 0) {
         System.out.println("Menu");
         System.out.println("1. Draw the triangle");
         System.out.println("2. Draw the square");
@@ -10,6 +11,7 @@ public class thietkemenuchoungdung {
         System.out.println("0. Exit");
         System.out.println("Enter your choice: ");
         choice = input.nextInt();
+
         switch (choice) {
             case 1:
                 System.out.println("Draw the triangle");
@@ -40,9 +42,8 @@ public class thietkemenuchoungdung {
             default:
                 System.out.println("No choice!");
         }
-        while(choice!= 0) {
+
 
         }
-
     }
 }
